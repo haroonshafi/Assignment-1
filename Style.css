@@ -1,0 +1,321 @@
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* Font family and thin weight for Barlow Condensed */
+.barlow-condensed-thin {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* Website background color */
+body {
+    background-color: rgb(13, 13, 13);
+}
+/* Individual Sections background colors */
+.section {
+    padding: 20px; /* Add padding for better spacing */
+    margin: 0; /* Remove default margin */
+}
+/* Video Project Section */
+#video-project {
+    background-color: #252525; /* Light grey */
+}
+/* Gallery Section */
+#gallery {
+    background-color: #202020; /* Slightly darker grey */
+}
+/* About Me Section */
+#about-me {
+    background-color: #171717; /* Darker grey */
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* Paragraph styling i.e for the "About" section */
+p {
+    font-size: larger;
+    text-align: center;
+    font-family: "Barlow Condensed", serif;
+    font-weight: 150;
+    color: white;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* Navigation Bar */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* Fixed navbar */
+#navbar {
+    position: fixed; /* fixes the navbar at the top */
+    top: 0; /* stays at the top of the viewport */
+    width: 100%; /* spans the full width of the page */
+    background-color: #333333; /* navbar color */
+    padding: 10px 10px;
+    z-index: 99; /* ensures the navbar stays on top of other elements */
+    transition: 0.4s; /* smooth transition for shrinking or other effects */
+}
+/* Navbar links */
+#navbar a {
+    font-family: "Barlow Condensed", sans-serif;   
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+/* Style for links when hovered */
+#navbar a:hover {
+    background-color: #575757;
+}
+/* Smooth scroll for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* Haroon's Arts Center Experience */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+h1 {
+    font-size: large;
+    text-align: center;
+    font-family: "Barlow Condensed", serif;
+    font-weight: 300;
+    color: white;
+}
+/* container for landing page image and website title */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* full height for the container */
+    overflow: hidden;
+}
+/* landing page image */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ensures the image covers the container without distortion */
+}
+/* website title */
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(2em, 5vw, 3em); /* Scales with window size */
+    font-family: "Barlow Condensed", serif;
+    font-weight: 100;
+    color: black;
+    background-color: rgb(255, 255, 255); /* White background */
+    padding: 10px 20px; /* Box padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    text-align: center;
+    max-width: 90%; /* Prevents text from overflowing */
+}
+* {box-sizing:border-box}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* "My Video Project" */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* heading styling */
+h2 {
+    font-size: clamp(2.5rem, 4vw, 3rem); /* Responsive with min and max limits */
+    text-align: center;
+    font-family: "Barlow Condensed", serif;
+    font-weight: 300;
+    color: white;
+}
+/* container for the embedded video */
+.video-container {
+    text-align: center;
+    width: 100%; /* Set container to full width */
+    height: auto;
+}
+.video-container iframe {
+    width: 80%; /* keep iframe responsive at 80% of the container's width */
+    max-width: 1080px; /* restrict maximum width */
+    height: auto; /* allow height to adjust proportionally */
+    aspect-ratio: 16 / 9; /* maintain a standard aspect ratio for videos */
+}
+h6 {
+    font-size: clamp(2.5rem, 4vw, 3rem); /* Responsive with min and max limits */
+    text-align: center;
+    font-family: "Barlow Condensed", serif;
+    font-weight: 200;
+    color: white;
+    font-size: xx-large;
+}
+/* Container for the text */
+.idea-text {
+    display: flex; /* Use flexbox to enable centering */
+    flex-direction: column; /* Stack the content vertically */
+    align-items: center; /* Horizontal centering */
+    justify-content: center; /* Vertical centering */
+    max-width: 600px; /* Limit text width */
+    margin: 0 auto; /* Center the text horizontally */
+    text-align: center;
+    font-family: 'Barlow Condensed', serif; /* Apply the font */
+    font-weight: 300; /* Set the weight */
+    color: white;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* "My Gallery" */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* heading styling */
+h3 {
+    text-align: center;
+    font-family: "Barlow Condensed", serif;
+    font-weight: 300;
+    color: white;
+    font-size: clamp(2.5rem, 4vw, 3rem);
+}
+/* slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* hide the images by default */
+.mySlides {
+  display: none;
+}
+/* next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* on hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* caption text */
+.text {
+    background-color: rgba(0,0,0,0.4);
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 4px;
+  width: 100%;
+  text-align: center;
+  font-family: "Barlow Condensed", serif;
+}
+/* number text (1/18 etc) */
+.numbertext {
+  font-family: "Barlow Condensed", serif;
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* the dots/bullets/indicators for navigating through the slides */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* "About" */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* heading styling */
+h4 {
+    text-align: center;
+    font-family: "Barlow Condensed", serif;
+    font-weight: 300;
+    color: white;
+    font-size: clamp(2.5rem, 4vw, 3rem);
+}
+/* container for the image and text */
+.about-section {
+    display: flex;
+    flex-direction: column; /* stack image and text vertically */
+    align-items: center; /* center items horizontally */
+    justify-content: center; /* center items vertically */
+    text-align: center; /* center text within its container */
+    gap: 20px; /* fixed space between image and text */
+    margin: 20px 0; /* space around the container */
+}
+/* my image */
+.self-image {
+    display: flex; /* center the image within its container */
+    justify-content: center; /* center horizontally */
+}
+.self-image img {
+    width: 50vw; /* make the image 50% of the viewport width */
+    height: 50vw; /* ensure height matches width to maintain circular shape */
+    max-width: 500px; /* limit the maximum size */
+    max-height: 500px; /* limit the maximum size */
+    border-radius: 50%; /* make the image circular */
+    object-fit: cover; /* ensure the image covers the container */
+}
+/* my introduction */
+.self-text {
+    max-width: 600px; /* Optional: limit text width */
+    text-align: center;
+    font-family: 'Barlow Condensed', serif; /* Apply the font */
+    font-weight: 300; /* Set the weight */
+    color: white;
+    margin-top: 20px; /* Optional: add space between the image and text */
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* "Contact" */
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* heading styling */
+h5 {
+    text-align: center;
+    font-family: "Barlow Condensed", serif;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    font-size: clamp(2.5rem, 4vw, 3rem);
+    margin-bottom: 20px; /* adds space between heading and icons */
+}
+/* centering the container and icons */
+.container-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers the content horizontally */
+    text-align: center; /* ensures text and icons are centered */
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.icon {
+    font-size: 40px;
+    color: rgb(255, 255, 255); /* icon color */
+    transition: color 0.3s ease;
+}
+/* icon color changes as you hover over it */
+.icon:hover {
+    color: rgb(255, 216, 124); /* Slight change on hover */
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
