@@ -19,16 +19,16 @@
     <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------- -->
     <div id="navbar">
         <!-- these reference the breaks before headings which have been given corresponding IDs for reference -->
-        <a href="#home">Home</a>
-        <a href="#movie">Movie</a>
-        <a href="#gallery">Gallery</a>   
-        <a href="#about">About</a>     
-        <a href="#contact">Contact</a>
+        <a href="#homeScroll">Home</a>
+        <a href="#movieScroll">Movie</a>
+        <a href="#galleryScroll">Gallery</a>   
+        <a href="#aboutScroll">About</a>     
+        <a href="#contactScroll">Contact</a>
     </div>
     <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------- -->
     <!-- Image and text container for the landing/home page -->
      <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-    <div id="home" class="image-container">
+    <div id="homeScroll" class="image-container">
         <!-- the image at the landing page -->
         <img src="media/Image13.jpg" alt="Me">
         <!-- title of the website -->
@@ -39,9 +39,9 @@
     <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------- -->
     <section id="video-project" class="section">
         <br>
-        <br id="movie"> 
+        <br> 
         <br>
-        <h2>My Video Project</h2>
+        <h2 id="movieScroll">My Video Project</h2>
         <!-- This section has my movie embedded from YouTube -->
         <div class="video-container">
             <iframe src="https://www.youtube.com/embed/lNag0lKmLK8?si=r2lyosBLGjJsUHM0" 
@@ -64,14 +64,14 @@
     <!-- Gallery Section -->
     <section id="gallery" class="section">
         <br>
-        <br id="gallery">
+        <!-- <br id="gallery"> -->
         <br>
         <!-- This section has images in a slideshow -->
         <div>
-            <h3>My Gallery</h3>
+            <h3 id="galleryScroll">My Gallery</h3>
         </div>
         <!-- Slideshow container -->
-        <div class="slideshow-container">
+        <div class="slideshow-container" id="gallery">
             <!-- -------------------------------------------------------------------------------------------------- -->
             <!-- Full-width images with number and personalised caption text for each image -->
             <div class="mySlides fade">
@@ -215,7 +215,7 @@
     <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------- -->
     <!-- About Me Section -->
     <section id="about-me" class="section">
-        <br id="about">
+        <br>
         <br>
         <!-- This section is about me, the maker of the website -->
         <div>
@@ -227,7 +227,7 @@
                 <img src="media/Self.jpg" alt="Me">
             </div>
             <!-- introducing myself and the idea behind this website -->
-            <div class="self-text">
+            <div class="self-text" id="aboutScroll">
                 <p>Hello! I'm Haroon Shafi, I'm from Pakistan, and I'm currently a sophomore at New York University Abu Dhabi, majoring in Computer Science and minoring in Interactive Media and Applied Mathematics. As part of my "Communications Lab" course, I've made this website to showcase my video project, titled "Fifteen Minutes Around the Arts Center", featuring clips shot around the Arts Center in the span of 15 minutes (well, most of them :p)!</p>
             </div>
         </div>
@@ -236,7 +236,7 @@
     <!-- here "Contact" redirects to the "Contact" section -->
     <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------- -->
     <br>
-    <br id="contact">
+    <br id="contactScroll">
     <!-- This section has links to my Instagram profile and a link to send me emails -->
     <div>
         <h5>Contact</h5>
